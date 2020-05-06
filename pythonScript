@@ -1,0 +1,13 @@
+import re
+def replace(x):
+    m = re.sub(r'IP', x, "scDevUtilConsole.exe --install --device HP --address IP --user admin --password passwordgoeshere --community communitynamegoeshere --file 31005032.b95 --serveraddress ipserver --adminuser admin --adminpassword adminpasswordgoeshere\n")
+    print(m)
+
+q=0
+#count = len(open('ip.txt').readlines())
+with open('ip.txt', 'r') as f:
+    while(q<count):
+        text = f.readline()
+        match=re.search(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}', text).group()
+        replace(match)
+        q=q+1
