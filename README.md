@@ -1,6 +1,6 @@
 # PythonScriptAutomation
 Python code to automate the way security solution´s bundle was sent to printers through the CMD.
-This Script uses regular expresions to read the IPs from a txt file and replace the IP on the scrip for copy, paste and run on the CMD.
+This Script uses regular expresions to read the IPs from a txt file and replace the IP on the scrip for a copy, paste and run on the CMD.
 
 Device Utilitie Console operations and parameters:
 
